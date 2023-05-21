@@ -1,0 +1,20 @@
+from django.db import models
+
+class Insight(models.Model):
+    end_year = models.CharField(max_length=100)
+    intensity = models.IntegerField()
+    sector = models.CharField(max_length=100)
+    topic = models.CharField(max_length=100)
+    insight = models.CharField(max_length=100)
+    url = models.URLField()
+    region = models.CharField(max_length=100)
+    start_year = models.CharField(max_length=100)
+    impact = models.CharField(max_length=100)
+    added = models.DateTimeField()
+    published = models.DateTimeField()
+    country = models.CharField(max_length=100)
+    relevance = models.IntegerField()
+    pestle = models.CharField(max_length=100)
+    source = models.CharField(max_length=100)
+    title = models.CharField(max_length=100)
+    likelihood = models.IntegerField()
